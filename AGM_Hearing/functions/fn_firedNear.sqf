@@ -30,7 +30,7 @@ _silencer = switch (_weapon) do {
   default {""};
 };
 
-_audibleFireCoef = 1;
+_audibleFireCoef = 0.5;
 //_audibleFireTimeCoef = 1;
 if (_silencer != "") then {
   _audibleFireCoef = getNumber (configFile >> "CfgWeapons" >> _silencer >> "ItemInfo" >> "AmmoCoef" >> "audibleFire");
