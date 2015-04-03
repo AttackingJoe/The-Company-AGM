@@ -130,12 +130,12 @@ if (vehicle _unit == _unit) then {
 
 // get time required for action to be completed
 _time = switch (_type) do {
-  case "diagnose" : {5};
-  case "bandage"  : {8};
-  case "morphine" : {5};
-  case "epipen"   : {5};
-  case "bloodbag" : {20};
-  default           {10};
+  case "diagnose" : {0};
+  case "bandage"  : {5};
+  case "morphine" : {3};
+  case "epipen"   : {3};
+  case "bloodbag" : {15};
+  default           {0};
 };
 if !([_unit] call AGM_Core_fnc_isMedic) then {
   _time = _time * (_unit getVariable ["AGM_Medical_CoefNonMedic", AGM_Medical_CoefNonMedic]);
