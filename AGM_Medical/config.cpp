@@ -1217,7 +1217,7 @@ class CfgVehicles {
       };
       class SingleBandage {
         displayName = "Single Bandage";
-        description = "Use one bandage to heal the entire body? Default: No";
+        description = "Use one bandage to heal the entire body? Default: Yes";
         typeName = "BOOL";
         class values {
           class Yes {
@@ -1225,7 +1225,7 @@ class CfgVehicles {
             value = 1;
           };
           class No {
-            default = 1;
+            default = 0;
             name = "No";
             value = 0;
           };
@@ -1241,7 +1241,7 @@ class CfgVehicles {
             value = 1;
           };
           class No {
-            default = 1;
+            default = 0;
             name = "No";
             value = 0;
           };
